@@ -1,0 +1,50 @@
+﻿# .NET
+bin/
+obj/
+*.user
+*.suo
+*.cache
+*.pidb
+*.psess
+*.vsp
+*.psess
+*.ncrunchsolution
+*._resharper
+*.dbmdl
+*.dbproj.schemaview
+*.jfm
+*.pfx
+*.publishsettings
+orleans.codegen.cs
+
+# ASP.NET Core
+appsettings.Development.json
+wwwroot/lib/
+node_modules/
+ClientApp/dist/
+.env
+
+# SQL Server
+*.mdf
+*.ldf
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.sln.ide
+.vscode/
+
+# Build results
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+build/
+bld/
+
+# User-specific files
+*.rsuser
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
