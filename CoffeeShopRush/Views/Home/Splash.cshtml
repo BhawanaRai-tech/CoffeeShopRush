@@ -1,0 +1,33 @@
+﻿@{
+    Layout = null;
+    ViewData["Title"] = "Welcome to Coffee Shop Rush";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Shop Rush - Welcome</title>
+    <link rel="stylesheet" href="~/css/splash.css" />
+</head>
+<body>
+<div class="splash-container">
+    <div class="steam">
+        <div class="coffee-cup">☕</div>
+    </div>
+    <div class="welcome-text">Welcome to Coffee Shop Rush</div>
+    <div class="developer-name">Developed by Bhawana Rai</div>
+    <div class="year">2026</div>
+    <div class="loading-bar">
+        <div class="loading-progress"></div>
+    </div>
+</div>
+
+<script>
+        setTimeout(function() {
+            window.location.href = '/Home/Landing';
+        }, 3000);
+    </script>
+</body>
+</html>

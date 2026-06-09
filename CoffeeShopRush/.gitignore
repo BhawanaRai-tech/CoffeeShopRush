@@ -18,7 +18,9 @@ obj/
 orleans.codegen.cs
 
 # ASP.NET Core
+appsettings.json
 appsettings.Development.json
+secrets.json
 wwwroot/lib/
 node_modules/
 ClientApp/dist/

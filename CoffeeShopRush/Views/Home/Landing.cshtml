@@ -1,0 +1,37 @@
+﻿@{
+ViewData["Title"] = "Coffee Shop Rush";
+Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/css/landing.css" />
+</head>
+<body>
+<div class="landing-container">
+    <div class="coffee-emoji">☕</div>
+    <h1>Coffee Shop Rush</h1>
+    <p>Serve customers before their patience runs out!<br>
+        Build the perfect coffee recipes and earn tips!</p>
+
+    <a href="/Auth/Login" class="google-login-btn">
+        <img src="https://www.gstatic.com/firebasejs/ui/2.0.0/images/auth/google.svg"
+             style="width: 24px; height: 24px;" alt="G">
+        Sign in with Google
+    </a>
+
+    <div class="features">
+        <ul>
+            <li>✓ ☕ Real-time coffee making</li>
+            <li>✓ 🏆 Global high scores</li>
+            <li>✓ ⏱️ Time management challenge</li>
+            <li>✓ 📊 Track your progress</li>
+        </ul>
+    </div>
+</div>
+</body>
+</html>

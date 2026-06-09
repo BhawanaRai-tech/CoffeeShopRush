@@ -1,6 +1,5 @@
-using System.Diagnostics;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using CoffeeShopRush.Models;
 
 namespace CoffeeShopRush.Controllers;
 
@@ -13,19 +12,35 @@ public class HomeController : Controller
         _logger = logger;
     }
 
+    // This is the entry point - shows splash screen first
     public IActionResult Index()
     {
+        return View("Splash");
+    }
+
+    public IActionResult Landing()
+    {
+        // If already authenticated, go to game
+        if (User.Identity?.IsAuthenticated == true)
+        {
+            return RedirectToAction("Play", "Game");
+        }
         return View();
     }
 
-    public IActionResult Privacy()
+    [Authorize]
+    public IActionResult Dashboard()
     {
         return View();
     }
 
-    [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
+    public IActionResult AccessDenied()
+    {
+        return View();
+    }
+
     public IActionResult Error()
     {
-        return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        return View();
     }
 }

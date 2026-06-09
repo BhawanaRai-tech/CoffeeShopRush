@@ -4,6 +4,8 @@ namespace CoffeeShopRush.Models;
 
 public class User
 {
+    public virtual ICollection<GameSession> GameSessions { get; set; } = new List<GameSession>();
+    public virtual ICollection<HighScore> HighScores { get; set; } = new List<HighScore>();
     [Key]
     public int UserId { get; set; }
     
